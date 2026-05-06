@@ -1,4 +1,7 @@
 import unittest
+import sys
+import os
+
 from geometri import mesafe_hesapla, dik_uzaklik_hesapla
 
 class TestGeometri(unittest.TestCase):
