@@ -19,3 +19,11 @@ class TestGeometri(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+    def test_alan_hesapla(self):
+        # 2x2'lik bir karenin alanı 4 olmalı
+        kare = [(0, 0), (2, 0), (2, 2), (0, 2)]
+        self.assertEqual(alan_hesapla(kare), 4.0)
+        
+        # 3-4-5 üçgeni (dik kenarlar 3 ve 4 birim) alanı 6 olmalı
+        ucgen = [(0, 0), (3, 0), (0, 4)]
+        self.assertEqual(alan_hesapla(ucgen), 6.0)
